@@ -12,6 +12,7 @@ $block_L=$_POST['block_L'];
 $block_W=$_POST['block_W'];
 $block_Ml=$_POST['block_Ml'];
 $block_type=$_POST['block_type'];
+$block_H=$_POST['block_H'];
 $conn=mysqli_connect("localhost","root","root","hiwin");
 
 $result=mysqli_query($conn,"SELECT * FROM block_parameters");
@@ -20,7 +21,7 @@ $result=mysqli_query($conn,"SELECT * FROM block_parameters");
 //    echo $row['B'] . " " . $row['C'];
 //    echo "<br />";
 //}
-$sql="INSERT INTO block_parameters values ('$block_B','$block_C','$block_L','$block_W','$block_Ml','$block_type')";
+$sql="INSERT INTO block_parameters values ('$block_B','$block_C','$block_L','$block_W','$block_Ml','$block_type','$block_H')";
 
 $re=mysqli_query($conn,$sql);
 
